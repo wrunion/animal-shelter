@@ -1,42 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <title>Sunshine Animal Shelter</title>
   </head>
   <body>
     <div class="container">
-  `    <h1>Sunshine Animal Shelter</h1>
-      <h2>Bringing joy to humans and animals alike</h2>
+      <div class="jumbotron">
+        <h1>Sunshine Animal Shelter</h1>
+        <h2>"Bringing joy to humans and animals everyday"</h2>
+      </div>
       <!--Menu -->
-      <ul class="top-nav">
-          <li>Adopt</li>
-          <li>Volunteer</li>
-          <li>Donate</li>
-          <li>About</li>
-          <li>Contact</li>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">About</a></li>
+        <li role="presentation"><a href="#">Adopt</a></li>
+        <li role="presentation"><a href="#">Volunteer</a></li>
+        <li role="presentation"><a href="#">Donate</a></li>
+        <li role="presentation"><a href="#">Contact</a></li>
       </ul>
-      <!--Animal cards-->
+      <!--<nav class="navbar">
+        <ul class="top-nav">
+            <li>Adopt</li>
+            <li>Volunteer</li>
+            <li>Donate</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+      </nav>-->
       <h2>Meet the animals!</h2>
-      <div class="column">
+      <div class="row">
+        <div class="col-md-4">
         <img src="media/dachshund.jpg" alt="A black and brown dachshund puppy" />
         <h3>Walter</h3>
-        <p>Walter is a small dog with a big personality! He's full of energy, and is great with kids!</p>
-        <a href="#">View more dogs</a>
-      </div>
-      <div class="column">
-        <img src="media/kitten.jpg" alt="A white kitten wrapped in a pink blanket." />
-        <h3>Leila</h3>
-        <p>Leila is shy but affectionate once she warms up to you. Her favorite things are chasing her squeaky toy, and purring on your lap!</p>
-        <a href="#">View more cats</a>
-      </div>
-      <div class="column">
-        <img src="media/lizard.jpg" alt="A small green lizard sitting on a wooden log." />
-        <h3>Richard the Third</h3>
-        <p>Richard the Third is a handsome gentleman, who's easy to care for and easy to love. His favorite things are his heat lamp, playing hide-and-seek, and eating crickets!</p>
-        <a href="#">View more reptiles</a>
+        <p>Walter is a small dog with a big personality! He's full of energy, loves to chase frisbees, and is great with kids!</p>
+        <br />
+        <h4><a href="#">View more dogs</a></h4>
+        </div>
+        <div class="col-md-4">
+          <img src="media/kitten.jpg" alt="A white kitten wrapped in a pink blanket." />
+          <h3>Leila</h3>
+          <p>Leila is shy but affectionate. Her favorite things are chasing her squeaky toy and purring on your lap!</p>
+          <br />
+          <h4><a href="#">View more cats</a></h4>
+        </div>
+        <div class="col-md-4">
+          <img src="media/lizard.jpg" alt="A small green lizard sitting on a wooden log." />
+          <h3>Richard the Third</h3>
+          <p>Richard the Third is a handsome gentleman, who's easy to care for and easy to love. His favorite thing is his heat lamp!</p>
+          <br />
+          <h4><a href="#">View more reptiles</a></h4>
+        </div>
       </div>
       <!--If we want to add animals, these are temples to make more columns.
       <div class="column">
@@ -52,12 +74,14 @@
       </div>
         <a href="#">View more hamsters</a>
          -->
-
-      <div class="jumbotron">
-        <h5>Sunshine Animal Shelter is a 501c3 organization, and your donations are tax deductible. Learn more about donation <a href="#">here!</a></h5>
-        </p>
         <br />
-        <p><strong>Sunshine Animal Shelter</strong> 123 Seseame Street, Portland OR, 97015 | <strong>Phone</strong> (503) 823-4948 | <strong>Email</strong> hello@sunshineanimalshelter.com</p>
+        <br />
+        <br />
+      <div class="footer">
+        <!--<h5>Sunshine Animal Shelter is a 501c3 organization, and your donations are tax deductible. Learn more about donation <a href="#">here!</a></h5>
+        </p>
+        <br />-->
+        <p><strong>Sunshine Animal Shelter</strong> 123 Sesame Street, Portland OR, 97015 | <strong>Phone</strong> (503) 823-4948 | <strong>Email</strong> hello@sunshineanimalshelter.com</p>
       </div>
     </div>
   </body>
