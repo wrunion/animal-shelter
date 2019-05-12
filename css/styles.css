@@ -1,3 +1,14 @@
 img {
   width: 300px;
 }
+
+.footer {
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgrey;
+}
+
+.footer p {
+  padding-top: 5px;
+}
